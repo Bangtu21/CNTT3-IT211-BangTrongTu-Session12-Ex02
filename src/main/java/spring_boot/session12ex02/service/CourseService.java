@@ -1,0 +1,17 @@
+package spring_boot.session12ex02.service;
+
+import spring_boot.session12ex02.model.Course;
+
+import java.util.List;
+
+public interface CourseService {
+    List<Course> findAll();
+
+    Course findById(Long id);
+
+    Course save(Course course);
+
+    Course update(Long id, Course course);
+
+    void delete(Long id);
+}
